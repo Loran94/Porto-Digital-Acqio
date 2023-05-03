@@ -1,0 +1,60 @@
+.root{
+    --cor-principal:#ffffff;
+    --cor-verde-escuro:#146C6C;
+    --cor-verde-claro:#2CACAC;
+    --cor-amarelo:#FCCC54;
+    --cor--azul:#007bff;
+}
+
+*{
+  padding: 0%; 
+  margin: 0%; 
+}
+.container-cabecalho{
+    text-align: center;
+}
+.container--corpo{
+text-align: center;
+}
+.apresentacao--texto{
+
+}
+.titulo--apresentacao{
+
+}
+.texto--apresentacao{
+
+}
+.container--img-link{
+text-align: center;
+}
+.texto--link{
+
+}
+.img--link{
+
+}
+.container--blog{
+text-align: center;
+}
+.imagem--blog{
+
+}
+.contianer--rodape{
+text-align: center;
+}
+.rodape--link{
+text-align:center;
+}
+.list--link{
+
+}
+.redes{
+
+}
+.rodape--texto{
+
+}
+.rodape--texto2{
+    
+}
