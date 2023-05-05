@@ -1,32 +1,39 @@
 .root{
-    --cor-principal:#ffffff;
-    --cor-verde-escuro:#146C6C;
-    --cor-verde-claro:#2CACAC;
-    --cor-amarelo:#FCCC54;
-    --cor--azul:#007bff;
+  --cor-principal:#ffffff;
+  --cor-verde-escuro:#146C6C;
+  --cor-verde-claro:#2CACAC;
+  --cor-amarelo:#FCCC54;
+  --cor--azul:#007bff;
+  --teal: #20c997;
 }
 
 *{
-  padding: 0%; 
-  margin: 0%; 
+padding: 0%; 
+margin: 0%; 
 }
 .container-cabecalho{
-    text-align: center;
+  text-align: center;
+  background-color: var(--cor--azul);
 }
 .container--corpo{
-text-align: center;
+
+
 }
 .apresentacao--texto{
-
+text-align: center;
 }
 .titulo--apresentacao{
-
+font-size: 50px;
+text-align: center;
 }
 .texto--apresentacao{
-
+text-align: center;
 }
 .container--img-link{
+margin: 10% 0% 10% 0%;
 text-align: center;
+width: 100%;
+height: 50%;
 }
 .texto--link{
 
@@ -35,26 +42,59 @@ text-align: center;
 
 }
 .container--blog{
+background-image: url('https://acqio.com.br/wp-content/themes/acqio_theme/imgs/yellow-texture.jpg');
+margin: 10% 0% 0% 0%;
+background-size: 100%;
+width: 100%;
+background-repeat: no-repeat;
+
+}
+.h2--blog{
+text-align: center;
+
+}
+.h3--blog{
 text-align: center;
 }
-.imagem--blog{
+.grupo--img--blog{
 
 }
 .contianer--rodape{
+width: 100%;
+height: 50%;
 text-align: center;
+
 }
 .rodape--link{
-text-align:center;
+margin-left: 15%;
+display: flex;
+text-align: center;
 }
 .list--link{
-
+text-align: center;
+margin: 7%;
+text-decoration: none;
 }
 .redes{
-
+padding-left: 45%;
 }
 .rodape--texto{
 
+margin-left: 15%;
+font-size: 75%;
+width: 40%;
+height: 40%;
+padding-bottom: 2%;
+padding-top: 0%;
+color: #eceaea;
+font-weight: 100;
 }
-.rodape--texto2{
-    
+.rodape--texto--2{
+font-size: 65%;
+width: 40%;
+height: 40%;
+margin-left: 15%;
+padding-bottom: 10%;
+color: #eceaea;
+font-weight: 100;
 }
