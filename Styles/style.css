@@ -1,10 +1,10 @@
 .root{
-  --cor-principal:#ffffff;
-  --cor-verde-escuro:#146C6C;
-  --cor-verde-claro:#2CACAC;
-  --cor-amarelo:#FCCC54;
-  --cor--azul:#007bff;
-  --teal: #20c997;
+    --cor-principal:#ffffff;
+    --cor-verde-escuro:#146C6C;
+    --cor-verde-claro:#2CACAC;
+    --cor-amarelo:#FCCC54;
+    --cor--azul:#007bff;
+    --teal: #20c997;
 }
 
 *{
@@ -15,9 +15,27 @@ margin: 0%;
   text-align: center;
   background-color: var(--cor--azul);
 }
+.container--nav{
+ background-color: #FCCC54;
+ text-align: center;
+padding-bottom: 1.2%;
+}
+.nav-link{
+  color: #146C6C;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+
+
+}
+.nav-link:hover{
+background-color: #007bff;
+
+text-decoration: none;
+}
 .container--corpo{
-
-
+text-align: center;
 }
 .apresentacao--texto{
 text-align: center;
@@ -27,42 +45,66 @@ font-size: 50px;
 text-align: center;
 }
 .texto--apresentacao{
-text-align: center;
+  text-align: center;
 }
 .container--img-link{
-margin: 10% 0% 10% 0%;
 text-align: center;
+margin: 10% 0% 10% 0%;
+align-items: center;
 width: 100%;
 height: 50%;
 }
 .texto--link{
-
+  color: #146C6C;
 }
 .img--link{
-
+ color: #007bff;
 }
 .container--blog{
 background-image: url('https://acqio.com.br/wp-content/themes/acqio_theme/imgs/yellow-texture.jpg');
-margin: 10% 0% 0% 0%;
+margin: 0% 0% 0% 0%;
 background-size: 100%;
-width: 100%;
+height: 50rem;
 background-repeat: no-repeat;
+}
+.container--blog--texto{
+text-align: center;
+}
+.h1--blog{
+text-align: center;
+font-size: 100px;
+color:var(--cor-verde-claro);
+}
+.p1--blog{
+text-align: center;
+}
+.container--card{
+  margin: 0%;
+  
+  display: flex;
+  justify-content:center;
+  
 
 }
-.h2--blog{
+.card--img--1{
+  margin: 0% 0% 0% 0% !important;
 text-align: center;
 
 }
-.h3--blog{
-text-align: center;
+.card--img--2{
+  text-align: center;
+  margin: 0% 5% 0% 5% !important;
 }
-.grupo--img--blog{
-
+.card--img--3{
+  text-align: center;
+  align-items: center;
+  margin: 0% 0% 0% 0% !important;
 }
 .contianer--rodape{
 width: 100%;
+background-size: 100%;
 height: 50%;
-text-align: center;
+
 
 }
 .rodape--link{
