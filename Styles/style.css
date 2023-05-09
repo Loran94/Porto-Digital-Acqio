@@ -37,6 +37,35 @@ text-decoration: none;
 .container--corpo{
 text-align: center;
 }
+.continer--sliders {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  
+  height: 500px;
+  max-height: 500px;
+  
+}
+.slider {
+  position: relative;
+  text-align: start;
+  width: 100%;
+  height: 500px;
+ 
+}
+.slider img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 800ms;
+  
+}
+.slider img.selected{
+  opacity: 1;
+}
+
 .apresentacao--texto{
 text-align: center;
 }
@@ -72,53 +101,64 @@ text-align: center;
 }
 .h1--blog{
 text-align: center;
-font-size: 100px;
-color:var(--cor-verde-claro);
+font-size: 5rem;
+color:#ffffff;
 }
 .p1--blog{
 text-align: center;
+font-size: 1.5rem;
+color:#ffffff;
 }
 .container--card{
   margin: 0%;
-  
   display: flex;
-  justify-content:center;
-  
-
+  justify-content: center;
 }
 .card--img--1{
-  margin: 0% 0% 0% 0% !important;
+  margin: 0% 0% 0% -60% !important;
 text-align: center;
 
 }
 .card--img--2{
   text-align: center;
-  margin: 0% 5% 0% 5% !important;
+  margin: 0% 0% 0% 0% !important;
 }
 .card--img--3{
   text-align: center;
   align-items: center;
-  margin: 0% 0% 0% 0% !important;
+  margin: 0% 0% 0% 60% !important;
 }
 .contianer--rodape{
 width: 100%;
+background-color: #2CACAC;
 background-size: 100%;
 height: 50%;
-
-
+}
+.contianer--lista--link{
+  background-color: #146C6C;
+  height:5rem;
 }
 .rodape--link{
-margin-left: 15%;
+margin-left: 0%;
 display: flex;
+justify-content: center;
 text-align: center;
 }
 .list--link{
 text-align: center;
-margin: 7%;
+margin: 2% 7% 3% 7%;
 text-decoration: none;
 }
 .redes{
-padding-left: 45%;
+padding-left: 60%;
+text-align: center;
+
+}
+.h3--redes{
+  color: #FCCC54;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2%;
 }
 .rodape--texto{
 
