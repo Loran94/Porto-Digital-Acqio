@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reclamações - Acqio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style-feedback.css">
+  </head>
+  <body>
+    <nav class="navbar fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+         <img class="navbar-brand" href="#" width="120" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio.svg" alt="Acqio">
+        </div>
+    </nav>
+    <br><br><br><br>
+    <h1 id="opcaodeReclamacao">Escolha a opção de reclamação</h1>
+    <div class="maquininha1">
+        <div>
+            <h2 class="h3 text-green mb-0">SMART POS</h2>
+            <img style="max-width: 240px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-smart-pos-thumb.jpg" alt="Acqio smart pos">
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+        </div>
+        <div>
+            <h2 class="h3 text-green mb-0">ACQIO C680</h2>
+            <img style="max-width: 240px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-c680-thumb.jpg" alt="Acqio C680">
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+        </div>
+        <div>
+            <h2 class="h3 text-green mb-0">ACQIO MAIS</h2>
+            <img style="max-width: 240px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-tef-thumb.jpg" alt="Acqio mais">
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+        </div>
+    </div>
+    <div class="maquininha1">
+        <div>
+            <h2 class="h3 text-green mb-0">App/Web</h2>
+            <img style="max-width: 240px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-link/acqio-link-app-lojistas.jpg" alt="Acqio App/Web">
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+        </div>
+        <div>
+            <h2 class="h3 text-green mb-0">Outros</h2>
+            <img style="max-width: 240px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-link/acqio-link-app-lojistas.jpg" alt="Acqio Link - App Lojistas">
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+        </div>
+    </div>
+    <br><br><br><br><br>
+        <div id="container" class="container">
+            <form>
+            <Div>
+                <img class="logo" src="https://login.acqio.com.br/img/acqio-logo.svg">
+            </Div>
+            <h1 class="textoFormularioInicial">Olá, faça sua reclamação</h1>
+            <br><br>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nome" placeholder="nome" required>
+                <label for="nome">Nome</label>
+            </div>
+            <br>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <label for="email">Email</label>
+            </div>
+            <p>Grupo:</p>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="cliente">
+                <label class="form-check-label" for="cliente">Cliente</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="franqueado">
+                <label class="form-check-label" for="franqueado">Franqueado</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="atendimento">
+                <label class="form-check-label" for="atendimento">Atendimento</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Comente aqui" id="comentario" style="height: 100px" required></textarea>
+                <label for="comentario">Comentário</label>
+            </div>
+            <br><br>
+                <button type="submit" class="btn btn-primary" id="botaoEnviar">Enviar</button>
+            </form>
+        </div>
+        <br><br>
+        
+        <div class="containerUltimasReclamacoes" id="ultimasReclamacoes">
+            <h2 id="h2ultimasReclamacoes">Últimas Reclamações</h2>
+            <div id="ultimasReclamacoes">
+                <p>Nome: lorem ipsum</p>
+                <p>Email:loremipsum@loremipsum.com</p>
+                <p>Grupo: lorem ipsum</p>
+                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+            </div>
+            <div id="ultimasReclamacoes">
+                <p>Nome: lorem ipsum</p>
+                <p>Email:loremipsum@loremipsum.com</p>
+                <p>Grupo: lorem ipsum</p>
+                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+            </div>
+        
+            <div id="ultimasReclamacoes">
+                <p>Nome: lorem ipsum</p>
+                <p>Email:loremipsum@loremipsum.com</p>
+                <p>Grupo: lorem ipsum</p>
+                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+            </div>
+            <div id="ultimasReclamacoes">
+                <p>Nome: lorem ipsum</p>
+                <p>Email:loremipsum@loremipsum.com</p>
+                <p>Grupo: lorem ipsum</p>
+                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+            </div>
+        </div>
+       
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+
+</html>
