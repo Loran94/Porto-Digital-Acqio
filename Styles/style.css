@@ -26,19 +26,22 @@ margin: 0%;
   text-align: center;
   padding: 2%;
 }
+
 .nav-link{
-  margin: 10%;
-  color:black;
+  margin: 9%;
+  color:rgb(0, 0, 0);
   text-decoration: none;
   font-family:var(--fonte-principal);
-  font-weight:300;
+  font-weight:500;
   font-size: 1.3rem;
   opacity: 1;
+  transition: all 0.3S ease;
 
 }
 .nav-link:hover{
   color: #146C6C;
-  text-decoration: none;
+  font-weight: 500;
+
 }
 .container--sliders {
   display: flex;
@@ -66,20 +69,24 @@ margin: 0%;
   opacity: 1;
 }
 .container--img-link{
-  text-align: center;
+  justify-content: center;
+  text-align: center !important;
   margin: 10% 0% 10% 0%;
   align-items: center;
   width: 100%;
   height: 50%;
 }
 .img--link{
-  width: 90%;
-  max-width: 100%;
-  padding-left: 5%;
-
+  text-align: center;
 }
-.img--link{
-  color: #007bff;
+
+#img--{
+  width: 40%;
+  border-radius: 2%;
+  transition: all 0.5s ease;
+}
+#img--:hover{
+  opacity: 70%;
 }
 .texto--link{
   color: #2CACAC;
@@ -104,36 +111,60 @@ margin: 0%;
   font-family: var(--fonte-principal);
 }
 .h1--blog{
+  text-decoration: none;
   text-align: center;
   font-size: 4rem;
   color:#ffffff;
+  font-family:var(--fonte-principal);
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.h1--blog:hover{
+opacity: 80%;
+
 }
 .p1--blog{
   text-align: center;
   font-size: 1.5rem;
   color:#ffffff;
+  font-family:var(--fonte-principal);
+  margin-bottom: 2%;
 }
 .container--card{
-  display: inline-flex;
+  display: flex;
   padding-left: 5%;
 }
 .card--img--1{
-  text-align: center;
   background-color: #eceaea;
   max-width: 40%;
-  height: 23em;
+  height: 25em;
   max-height: 100%;
+  font-family:var(--fonte-principal);
   border-radius: 4%;
   
 }
 .card--img--2{
-  text-align: center;
   background-color: #eceaea;
   width: 70%;
-  height: 23em;
+  height: 25em;
   border-radius: 4%;
+  font-family:var(--fonte-principal);
   
 }
+.btn {
+color: #146C6C;
+}
+.btn:hover {
+  opacity: 70%;
+  transition: all 0.5s ease;
+}
+#img-blog{
+  transition: all 0.5s ease;
+}
+#img-blog:hover{
+opacity: 70%;
+}
+
 .card-text{
 margin: 5%;
 font-size: 0.9rem;
@@ -158,15 +189,18 @@ margin-top: 0%;
   padding-top: 1%;
 }
 .lista--link{ 
+  text-align: center;
   text-decoration: none;
-  margin: 8.5%;
+  margin: 6.5%;
   color: black;
   font-family:var(--fonte-principal);
   font-weight:300;
   font-size: 1.2rem;
+  transition: all 0.3s ease;
 }
 .lista--link:hover{
   color: #146C6C;
+  font-weight: 500;
 }
 
 .redes{
@@ -180,6 +214,9 @@ margin-top: 0%;
   font-size: 1.5rem;
   text-align:end;
   margin-right: 2%;
+}
+#img--logo--rodape{
+width:7%;
 }
 .rodape--texto{
   margin-left: 15%;
@@ -214,7 +251,6 @@ margin-top: 0%;
   
 @media(max-width:1024px){
   
-  
   .nav-link{
   font-size: 0.9rem;
   margin: 5%;
@@ -234,22 +270,20 @@ margin-top: 0%;
     text-align: center;
     
   }
-  .img--link{
-    width: 90%;
+  #img--{
+    width: 60%;
   }
   .texto--link{
     font-size: 1rem;
   }
   .container--blog{
     background-image: url('https://acqio.com.br/wp-content/themes/acqio_theme/imgs/yellow-texture.jpg');
-    
     background-size: 100%;
     height: 60rem;
     background-repeat:repeat;
   }
   .container--blog--texto{
     text-align: center;
-    
   }
   .h1--blog{
     text-align: center;
@@ -292,7 +326,24 @@ margin-top: 0%;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   }
-  .card--titulo{
-  
+
+  .contianer--lista--link{
+    height: 2.5rem;
   }
+  .lista--link{
+    font-size: 0.5rem;
+    margin: 3.45%;
+  }
+  #img--logo--rodape{
+    width:20%;
+  }
+  .rodape--texto{
+    font-size: 0.6rem;
+  }
+  .rodape--texto--2{
+    font-size: 0.6rem;
+  }
+.ultimo--texto{
+  font-size: 0.9rem;
+}
 }
