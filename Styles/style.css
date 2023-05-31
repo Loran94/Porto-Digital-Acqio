@@ -151,7 +151,7 @@ opacity: 80%;
   font-family:var(--fonte-principal);
   
 }
-.btn {
+.btn1 {
 color: #146C6C;
 }
 .btn:hover {
@@ -245,7 +245,7 @@ width:7%;
   font-weight: 600;
   color: #eceaea;
   padding-bottom: 7%;
-  font-family:var(--fonte-principal);
+  font-family: 'Lato', sans-serif;
 }
 
   
