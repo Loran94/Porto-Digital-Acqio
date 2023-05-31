@@ -1,3 +1,4 @@
+
 #opcaodeReclamacao{
     text-align: center;
     color: #146C6C;
@@ -9,6 +10,7 @@
     margin-right: auto;
 }
 
+
 .h3{
     color: #146C6C;
 }
@@ -17,6 +19,8 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    
+    
 }
 
 .maquininha1 div{
@@ -25,7 +29,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    
 }
 
 .btn-secondary{
@@ -41,10 +45,10 @@
 }
 
 .container{
-    
+    margin: 5%;
     box-shadow: 0px 0px 2px 2px #0000002d;
     background-color: white; 
-    width: auto;
+    width: 400px;
     padding: 2rem;
     border-radius: 15px;
     
@@ -70,22 +74,25 @@
     margin-right: auto;
 }
 
-.containerultimasReclamacoes{
+.containerUltimasReclamacoes{
+    width: 400px;
+    height: 751px;
+    margin: 5%;
     box-shadow: 0px 0px 2px 2px #0000002d;
     background-color: white; 
-    width: auto;
     padding: 2rem;
-    border-radius: 10px;
-    overflow: scroll;
+    border-radius: 15px;
+    overflow: scroll; 
+    
 
 }
 
 #ultimasReclamacoes{
     box-shadow: 0px 0px 2px 2px #0000002d;
-    background-color: white;
+    background-color: white; 
     width: auto;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 0.5rem;
     
 
@@ -95,3 +102,182 @@
     text-align: center;
     color: #146C6C;
 }
+.reclamacoes{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-like {
+    --red: rgb(255, 50, 100);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    
+  }
+  
+  .con-like .like {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+    position: absolute;
+    right: -200;
+  }
+  
+  .con-like .checkmark {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -200;
+  }
+  
+  .con-like .outline,
+  .con-like .filled {
+    fill: var(--red);
+    position: absolute;
+  }
+  
+  .con-like .filled {
+    animation: kfr-filled 0.5s;
+    display: none;
+  }
+  
+  .con-like .celebrate {
+    position: absolute;
+    animation: kfr-celebrate 0.5s;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+  
+  .con-like .poly {
+    stroke: var(--red);
+    fill: var(--red);
+  }
+  
+  .con-like .like:checked ~ .checkmark .filled {
+    display: block
+  }
+  
+  .con-like .like:checked ~ .checkmark .celebrate {
+    display: block
+  }
+  .contianer--rodape{
+    width: 100%;
+    background-color: #2CACAC;
+    background-size: 100%;
+    height: 50%;
+  }
+  .contianer--lista--link{
+    width: 100%;
+    background-color:#ffffff;
+    height:4rem;
+  }
+  .lista{
+    padding-top: 1%;
+  }
+  .lista--link{ 
+    text-align: center;
+    text-decoration: none;
+    margin: 6.5%;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  .lista--link:hover{
+    color: #146C6C;
+    font-weight: 500;
+  }
+  
+  .redes{
+    padding-top: 5%;
+    text-align:end;
+    margin-right: 10%;
+    font-family: 'Lato', sans-serif;
+  }
+  .h3--redes{
+    color: #FCCC54;
+    font-size: 1.5rem;
+    text-align:end;
+    margin-right: 2%;
+  }
+  #img--logo--rodape{
+  width:7%;
+  }
+  .rodape--texto{
+    margin-left: 15%;
+    font-size: 1rem;
+    width: 40%;
+    height: 40%;
+    color: #eceaea;
+    font-weight: 300;
+    margin-bottom: 2%;
+    font-family: 'Lato', sans-serif;
+  }
+  .rodape--texto--2{
+    font-size: 1rem;
+    width: 40%;
+    height: 40%;
+    margin-left: 15%;
+    padding-bottom: 10%;
+    color: #eceaea;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+  }
+  .ultimo--texto{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #eceaea;
+    padding-bottom: 7%;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  @keyframes kfr-filled {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes kfr-celebrate {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 0.8;
+    }
+  
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+      display: none;
+    }
+  }
+
+
+
+@media screen and (max-width: 500px) {
+    .maquininha1, .reclamacoes{
+        flex-direction: column;
+    }
+     
+}
+
+
+
