@@ -47,8 +47,7 @@ var botoes = document.querySelectorAll(".like");
     }
 
 // Botao evniar
-function enviarFormulario() {
-		var nome = document.getElementById("#nome").value;
-		window.location.href = "#" + encodeURIComponent(nome);
-        console.log(enviarFormulario);
+function agradecimento() {
+  
+        window.location.href = "agradecimento.html";
 }
