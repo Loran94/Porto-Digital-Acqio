@@ -81,7 +81,7 @@
 
 .containerUltimasReclamacoes{
     width: 400px;
-    height: 751px;
+    height: 765px;
     margin: 5%;
     box-shadow: 0px 0px 2px 2px #0000002d;
     background-color: white; 
@@ -183,6 +183,7 @@
     width: 100%;
     background-color:#ffffff;
     height:4rem;
+    
   }
   .lista{
     padding-top: 1%;
@@ -240,7 +241,7 @@
   .ultimo--texto{
     text-align: center;
     font-size: 1.4rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     font-weight: 600;
     color: #eceaea;
     padding-bottom: 7%;
@@ -277,9 +278,41 @@
 
 
 
+  
 @media screen and (max-width: 500px) {
     .maquininha1, .reclamacoes{
         flex-direction: column;
+    }
+    .contianer--lista--link{
+      height: 2.5rem;
+    }
+    .lista--link{
+      font-size: 0.5rem;
+      margin: 3.45%;
+   
+    }
+    .h3--redes{
+      font-size: 0.8rem;
+    }
+    #img--redes{
+      width: 1rem;}
+    
+    #img--logo--rodape{
+      width:20%;
+    
+    }
+    .rodape--texto{
+      margin-top: 20px;
+      font-size: 0.6rem;
+    }
+    .rodape--texto--2{
+      margin-top: 40px;
+        margin-bottom: 50px;
+      font-size: 0.6rem;
+    }
+    .ultimo--texto{
+     
+    font-size: 0.9rem;
     }
      
 }
