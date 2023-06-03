@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reclamações - Acqio</title>
+    <title>Reclamações e Melhorias - Acqio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./Styles/style-feedback.css">
     
@@ -16,46 +16,46 @@
         </div>
     </nav>
     <br><br><br><br>
-    <h1 id="opcaodeReclamacao">Escolha a opção de reclamação</h1>
+    <h1 id="opcaodeReclamacao">Escolha a opção de Reclamação ou Melhoria</h1>
     <div class="maquininha1">
         <div>
             <h2 class="h3 text-green mb-0">SMART POS</h2>
             <img style="max-width: 180px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-smart-pos-thumb.jpg" alt="Acqio smart pos">
-            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">COMENTAR</a>
         </div>
         <div>
             <h2 class="h3 text-green mb-0">ACQIO C680</h2>
             <img style="max-width: 180px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-c680-thumb.jpg" alt="Acqio C680">
-            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">COMENTAR</a>
         </div>
         <div>
             <h2 class="h3 text-green mb-0">ACQIO MAIS</h2>
             <img style="max-width: 180px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-tef-thumb.jpg" alt="Acqio mais">
-            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">COMENTAR</a>
         </div>
     </div>
     <div class="maquininha1">
         <div>
             <h2 class="h3 text-green mb-0">App/Web</h2>
             <img style="max-width: 180px;" class="img-fluid" src="https://acqio.com.br/wp-content/themes/acqio_theme/imgs/acqio-link/acqio-link-app-lojistas.jpg" alt="Acqio App/Web">
-            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">COMENTAR</a>
         </div>
         <div>
             <h2 class="h3 text-green mb-0">Outros</h2>
             <img style="max-width: 280px;" class="img-fluid" id="imgOutros" src="./Assets/Imagem-Outros-Reclamações.png" alt="Acqio outros">
-            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">RECLAMAR</a>
+            <a href="#container" class="btn btn-lg btn-secondary rounded-pill mt-3">COMENTAR</a>
         </div>
     </div>
     <br><br><br><br><br>
     <div class="reclamacoes">
         <div id="container" class="container">
-            <form method="post" action="https://loran94.github.io/Porto-Digital-Acqio/agradecimento.html">
+            <form id="form" action="agradecimento.html">
             <Div>
                 <img class="logo" src="https://login.acqio.com.br/img/acqio-logo.svg">
             </Div>
-            <h1 class="textoFormularioInicial">Olá, faça sua reclamação</h1>
+            <h1 class="textoFormularioInicial">Olá, faça seu Comentário</h1>
             <br><br>
-            <div class="form-floating mb-3">
+            <div  class="form-floating mb-3">
                 <input type="text" class="form-control" id="nome" placeholder="nome" required>
                 <label for="nome">Nome</label>
             </div>
@@ -77,19 +77,19 @@
                 <input type="checkbox" class="form-check-input" id="atendimento">
                 <label class="form-check-label" for="atendimento">Atendimento</label>
             </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Comente aqui" id="comentario" style="height: 100px" required></textarea>
-                <label for="comentario">Comentário</label>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Comentário</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <br><br>
-                <button  type="submit" class="btn btn-primary" id="botaoEnviar">Enviar</button>
+                <button  type="submit" class="btn btn-primary" id="botaoEnviar" >Enviar</button>
             </form>
             
         </div>
         <br><br>
         
         <div class="containerUltimasReclamacoes" id="containerUltimasReclamacoes">
-            <h2 id="h2ultimasReclamacoes">Últimas Reclamações</h2>
+            <h2 id="h2ultimasReclamacoes">Últimos Comentários</h2>
             <div id="ultimasReclamacoes">
                 <div class="con-like">
                     <input id="-like" title="like" type="checkbox" class="like">
@@ -110,10 +110,10 @@
                       </svg>
                     </div>
                   </div>
-                <p>Nome: lorem ipsum</p>
-                <p>Email:loremipsum@loremipsum.com</p>
-                <p>Grupo: lorem ipsum</p>
-                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                <p><b>Nome:</b> Ivan Souza</p>
+                <p><b>Email:</b> IvanSouza15@gmail.com</p>
+                <p><b>Grupo:</b> Cliente</p>
+                <p><b>Comentário:</b> A duração da bateria do ACQIO MAIS é um problema. Muitas vezes, ela não dura um dia inteiro de uso, o que é inconveniente para os comerciantes em movimento</p>
             </div>
             <div id="ultimasReclamacoes">
                 <div class="con-like">
@@ -135,10 +135,10 @@
                       </svg>
                     </div>
                   </div>
-                <p>Nome: lorem ipsum</p>
-                <p>Email:loremipsum@loremipsum.com</p>
-                <p>Grupo: lorem ipsum</p>
-                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                <p><b>Nome:</b> Carlos Pereira</p>
+                <p><b>Email:</b> CarlosPereira_1526@hotmail.com</p>
+                <p><b>Grupo:</b> Franqueado</p>
+                <p><b>Comentário:</b> A conectividade do SMART POS pode ser instável em algumas áreas. Seria benéfico ter uma antena de sinal mais forte para garantir uma conexão confiável em todos os momentos</p>
             </div>
         
             <div id="ultimasReclamacoes">
@@ -161,10 +161,10 @@
                       </svg>
                     </div>
                   </div>
-                <p>Nome: lorem ipsum</p>
-                <p>Email:loremipsum@loremipsum.com</p>
-                <p>Grupo: lorem ipsum</p>
-                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                <p><b>Nome:</b> Clara Vasconcelos</p>
+                <p><b>Email:</b> Clara.Vasconcelos@gmail.com</p>
+                <p><b>Grupo:</b> Atendimento</p>
+                <p><b>Comentário:</b> Seria útil se o aplicativo/web tivesse recursos de notificação para alertar os usuários sobre atualizações importantes, como manutenção programada ou novos recursos</p>
             </div>
             <div id="ultimasReclamacoes">
                 <div class="con-like">
@@ -186,31 +186,32 @@
                       </svg>
                     </div>
                   </div>
-                <p>Nome: lorem ipsum</p>
-                <p>Email:loremipsum@loremipsum.com</p>
-                <p>Grupo: lorem ipsum</p>
-                <p>Comentário: lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                <p><b>Nome:</b> Karina Santos</p>
+                <p><b>Email:</b> Karina_Santos@gmail.com</p>
+                <p><b>Grupo:</b> Cliente</p>
+                <p><b>Comentário:</b> Integração com sistemas de ponto de venda (POS): Adicionar recursos de integração com sistemas de POS pode simplificar as operações de vendas para os comerciantes. Isso permitiria que eles conectassem a maquininha diretamente aos seus sistemas de vendas, facilitando o acompanhamento de estoque, gerenciamento de inventário e geração de relatórios.</p>
             </div>
         </div>
     </div>    
        
-    <footer class="contianer--rodape" style="height: 885px;">
+    <footer class="contianer--rodape" style="height: 1000px;">
       <section class="contianer--lista--link">
        <div class=lista>  
-       <a class="lista--link" href="https://acqio.com.br/historico/">SOBRE A ACQIO</a>
-       <a class="lista--link" href="reclamações.html">FEEDBACK</a>
-       <a class="lista--link" href="https://acqio.com.br/franquias/">FRANQUIAS</a>
-       <a class="lista--link" href="https://acqio.com.br/blog/">BLOG</a>
-       <a class="lista--link" href="https://acqio.com.br/atendimento/">FALE CONOSCO</a>
-        </div>
+        <a class="lista--link" href="https://acqio.com.br/historico/">SOBRE A ACQIO</a>
+        <a class="lista--link" href="reclamações.html">FEEDBACK</a>
+        <a class="lista--link" href="https://acqio.com.br/acqio-online/">ACQIO ONLINE</a>
+        <a class="lista--link" href="https://acqio.com.br/franquias/">FRANQUIAS</a>
+        <a class="lista--link" href="https://acqio.com.br/blog/">BLOG</a>
+       
+       </div>
       </section>
     <div class="redes">
       <div><h3 class="h3--redes">Redes Sociais</h3>
       </div>
-        <a href="https://www.facebook.com/Acqio"><img id="img--redes" src="Assets/facebook (1).png" alt="Facebook" style="margin: 0.5%; width: 2.1rem;"></a>
-        <a href="https://www.instagram.com/acqio/"><img id="img--redes" src="Assets/instagram.png" alt="Instagram"style="margin: 0.5%;width: 2.1rem;"></a>
-        <a href="https://www.youtube.com/c/acqio"><img id="img--redes" src="Assets/youtube.png" alt="Youtube"style="margin: 0.5%;width: 2.1rem;"></a>
-        <a href="https://www.linkedin.com/company/10103172/"><img src="Assets/linkedin.png" alt="Linkdin"style="margin: 0.5%;width: 2.1rem;"></a>
+        <a class="img--rede" href="https://www.facebook.com/Acqio"><img id="img--redes" src="Assets/facebook (1).png" alt="Facebook" style="margin: 0.5%; width: 2.1rem;"></a>
+        <a class="img--rede" href="https://www.instagram.com/acqio/"><img id="img--redes" src="Assets/instagram.png" alt="Instagram"style="margin: 0.5%;width: 2.1rem;"></a>
+        <a class="img--rede" href="https://www.youtube.com/c/acqio"><img id="img--redes" src="Assets/youtube.png" alt="Youtube"style="margin: 0.5%;width: 2.1rem;"></a>
+        <a class="img--rede" href="https://www.linkedin.com/company/10103172/"><img src="Assets/linkedin.png" alt="Linkdin"style="margin: 0.5%;width: 2.1rem;"></a>
 
 
     </div>
@@ -221,6 +222,7 @@
             A expansão da companhia permanece em ritmo acelerado por meio de parcerias estratégicas e com o lançamento de novos produtos,
             feitos com tecnologia de ponta e uso intuitivo para experiências de qualidade.​</p>
         </div>
+        <br><br><br>
         <div class="rodape--texto--2" style="height: 144px;">
         <p>  
             A Esfera 5 Tecnologia e Pagamentos S.A (CNPJ: 18.577.728/0001-46) não é um banco ou uma instituição financeira, mas prestador de serviços de correspondente bancário à QI Sociedade de Crédito Direto S.A.
@@ -229,6 +231,7 @@
               Para entrar em contato com a instituição financeira, acesse: www.qitech.com.br
         </p>
         </div>
+        <br><br><br>
         <div class="ultimo--texto">
           <img id="img--logo--rodape" src="Assets/acqio-white.svg" alt="logo rodape">
             <p> Quem faz, conta com a gente.</p>
