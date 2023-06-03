@@ -215,6 +215,10 @@ margin-top: 0%;
   text-align:end;
   margin-right: 2%;
 }
+#img--redes{
+  margin: 0.5%;
+  width: 2.1rem;
+}
 #img--logo--rodape{
 width:7%;
 }
@@ -226,7 +230,7 @@ width:7%;
   color: #eceaea;
   font-weight: 300;
   margin-bottom: 2%;
-  font-family:var(--fonte-principal);
+  font-family: 'Lato', sans-serif;
 }
 .rodape--texto--2{
   font-size: 1rem;
@@ -236,12 +240,11 @@ width:7%;
   padding-bottom: 10%;
   color: #eceaea;
   font-weight: 300;
-  font-family:var(--fonte-principal);
+  font-family: 'Lato', sans-serif;
 }
 .ultimo--texto{
   text-align: center;
   font-size: 1.4rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   color: #eceaea;
   padding-bottom: 7%;
@@ -252,7 +255,7 @@ width:7%;
 @media(max-width:1024px){
   
   .nav-link{
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   margin: 5%;
   }
   .container--sliders {
@@ -279,7 +282,7 @@ width:7%;
   .container--blog{
     background-image: url('https://acqio.com.br/wp-content/themes/acqio_theme/imgs/yellow-texture.jpg');
     background-size: 100%;
-    height: 60rem;
+    height: 65rem;
     background-repeat:repeat;
   }
   .container--blog--texto{
@@ -296,7 +299,7 @@ width:7%;
     color:#ffffff;
   }
   .container--card{
-    padding-left: 25%;
+    padding-left: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,20 +308,28 @@ width:7%;
   .card--img--1{
     text-align: center;
     background-color: #eceaea;
-    max-width: 70%;
-    height: 15em;
+    max-width: 75%;
+    height: 18em;
     max-height: 100%;
     border-radius: 4%;
     margin-top: 4%;
     margin-bottom: 4%;
   }
+  #img-blog{
+   border-top-left-radius: 4%;
+   border-top-right-radius: 4%;
+   
+  }
   .card--img--2{
     text-align: center;
     background-color: #eceaea;
-    width:70%;
-    height: 15em;
+    width:75%;
+    height: 18em;
     border-radius: 4%;
     margin-top: 4%;
+  }
+  .card-title{
+    font-size: 0.8rem;
   }
   .card-text{
   margin: 5%;
@@ -332,7 +343,14 @@ width:7%;
   }
   .lista--link{
     font-size: 0.5rem;
-    margin: 3.45%;
+    margin: 3%;
+    padding-left: 1%;
+  }
+  .h3--redes{
+    font-size: 0.8rem;
+  }
+  #img--redes{
+    width: 1.5rem;
   }
   #img--logo--rodape{
     width:20%;
